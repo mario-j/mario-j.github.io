@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mario Jordan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- load fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1cdbbcabd5.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
+
+  <!-- dev icons font -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+
+    <!-- custom css -->
+  <link rel="stylesheet" type="text/css"  href="../css/index.css">
+
+    <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!-- scroll reveal -->
+  <script>
+    (function() {
+
+      var config = {
+        viewFactor: 0.15,
+        duration: 800,
+        distance: "0px",
+        scale: 0,
+        viewOffset: {
+          top: 50
+        },
+      }
+
+      window.sr = new ScrollReveal(config)
+    })()
+  </script>
+</head>
+
+<body>
+  <div class="full-page" id="loading">
+    <div class="spinner">
+      Loading portfolio...
+      <br>
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+  <div id="default-site">
+    <nav class="navbar sticky-top navbar-dark bg-dark" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav bg-dark" onclick="navitemClicked(event)">
+            <li class="selected">
+              <a class="nav-item" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#summary">Summary</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#about-me">Bio</a>
+            </li>
+          </ul>
+          <ul class="nav  email-button">
+            <li>
+              <a href="mailto:mjordanbartolo@gmailcom" style="padding:4px;">Email Me</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <div class="front-page" id="home">
+      <div class="text-center container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="title col-xs-12 col-sm-12 col-md-12 col-lg-12">Hi, I&#39;m Mario</div>
+          <br>
+          <div class="description col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            I am a Software Developer among
+            <span id="other-things" class="tooltip-container">
+              other things
+            </span>. Here you'll find some of the stuff I've made over the years.
+          </div>
+          <br>
+          <div class="quicklinks">
+            <a href="#projects" style="text-decoration: none">
+              <div class="black-button">
+                PROJECTS
+              </div>
+            </a>
+            <a style="text-decoration: none">
+              <a href="../assets/pdfs/resume.pdf" target="_blank" class="black-button">RESUME</a>
+            </a>
+            <a href="#about-me" style="text-decoration: none">
+              <div class="black-button">
+                BIO
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="container">
+
+          <div class="card-container">
+            <div id="headshot-card" class="card">
+              <div class="side"><img class="headshot img-fluid" src="../assets/images/MarioJordan.jpg" alt="Mario Headshot"></div>
+              <div class="side back">
+                <ul style="margin-top: 60px;margin-left: 30px;"">
+							<li>Pianist</li>
+							<li>Exerciser</li>
+							<li>Crossword enthusiast</li>
+							<li>Sports gambler</li>
+							<li>Amateur chef</li>
+							<li>Cat owner</li>
+							<li>Rocket League player</li>
+						</ul>
+					</div>
+			  </div>
+			</div>
+			</div>
+			<br>
+			<div id=" bored-game-btn" class="bored-game-btn" onclick="showBoredGame()">
+                  I'm Bored
+              </div>
+            </div>
+          </div>
+
+          <div id="projects" style="padding-top:10px;">
+            <div class="gap"></div>
+            <div class="project-strip text-center">
+              <div class="container">
+                <div class="title text-center">
+                  Projects
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio text-center">
+            <div class="box" style="margin-top:30px">
+              <div class="row">
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+                <span class="projects-subheader">&nbsp;Software Development&nbsp;<span>
+                    <i class="fa fa-minus" aria-hidden="true" style="cursor: pointer" onclick="toggleSection('software-development-container', event)"></i>
+              </div>
+              <div class="line"></div>
+              <div id="software-development-container" class="container collapsible open">
+                <div id="software-development-container-contents" class="row">
+                  <div class="hidden-xs col-sm-1 col-md-2 col-lg-2"></div>
+                  <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="window.open('https://hub.docker.com/r/mariojordan/email-exercise');">
+                          <img class="image-content" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/mail.png" />
+                        </div>
+                        <div class="row flex-no-wrap">
+                          <span class="title">
+                            <a href="https://hub.docker.com/r/mariojordan/email-exercise" target="_blank" style="color: black; line-height:36px;">Email Inbox</a>
+                          </span>
+                          <a href="https://hub.docker.com/r/mariojordan/email-exercise" target="_blank">
+                            <div class="portfolio-icon">
+                              <i class="fab fa-docker" aria-hidden="true"></i>
+                            </div>
+                          </a>
+                          <a href="https://github.com/mario-j/email-exercise" target="_blank">
+                            <div class="portfolio-icon">
+                              <i class="fa fa-github " aria-hidden="true"></i>
+                            </div>
+                          </a>
+
+                        </div>
+                        <div class="row">
+                          <span class="summary">An Angular/Node.js app where you can connect to an email server using IMAP/POP3 to view emails.</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="window.open('https://github.com/mario-j/address-search');">
+                          <img class="image-content" src="https://cdn.geekwire.com/wp-content/uploads/2014/04/unnamed1.png" />
+                        </div>
+                        <div class="row">
+                          <span class="title">
+                            <a href="https://github.com/mario-j/address-search" target="_blank" style="color: black; line-height:36px;">Redfin Parser</a>
+                          </span>
+                          <a href="https://github.com/mario-j/address-search" target="_blank">
+                            <div class="portfolio-icon">
+                              <i class="fa fa-github " aria-hidden="true"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="row">
+                          <span class="summary">An Angular/Node.js app that parses and displays a CSV of Redfin listings</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="window.open('https://github.com/mario-j/random-chord-generator');">
+                          <img class="image-content" src="https://www.i2symbol.com/images/text-symbols/music-symbol.png" />
+                        </div>
+                        <div class="row">
+                          <span class="title">
+                            <a href="https://github.com/mario-j/random-chord-generator" target="_blank" style="color: black; line-height:36px;">Chord Builder</a>
+                          </span>
+                          <a href="https://github.com/mario-j/random-chord-generator" target="_blank">
+                            <div class="portfolio-icon">
+                              <i class="fa fa-github " aria-hidden="true"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="row">
+                          <span class="summary">An Android/Kotlin App that generates random 4-chord progressions while adhering to basic music theory principles.</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="showBoredGame()">
+                          <img class="image-content" src="https://cdn-icons-png.flaticon.com/128/637/637516.png" />
+                        </div>
+                        <div class="row">
+                          <span class="title">
+                            <a onclick="showBoredGame()" style="color: black; line-height:36px;">Bored Game</a>
+                          </span>
+                        </div>
+                        <div class="row">
+                          <span class="summary">A few simple games using vanilla HTML, CSS, and JS embedded in this site.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden-xs col-sm-1 col-md-2 col-lg-2"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="box text-center flex-horizontal-center flex" onclick="toggleNonTechProjects()"> <div id="btn-non-tech" class="full-projects-button"> Other stuff I've done </div> </div> -->
+
+            <div class="box">
+              <div class="row">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <span class="projects-subheader">&nbsp;Writing&nbsp;<span>
+                    <i class="fa fa-plus" aria-hidden="true" style="cursor: pointer" onclick="toggleSection('writing-container', event)"></i>
+              </div>
+              <div class="line"></div>
+              <div id="writing-container" class="container collapsible" style="height:0">
+                <div id="writing-container-contents" class="row">
+                  <div class="hidden-xs col-sm-1 col-md-2 col-lg-2"></div>
+                  <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="window.open('../assets/pdfs/AIsLearnedBiases.pdf')">
+                          <img class="image-content" src="https://suplari.com/wp-content/uploads/2018/08/artificial-intelligence.png" />
+                        </div>
+                        <div class="row">
+                          <span class="title">
+                            <a href="../assets/pdfs/AIsLearnedBiases.pdf" target="_blank" style="color: black;">Gender Bias and Heternormativity in AI</a>
+                          </span>
+                        </div>
+                        <div class="row">
+                          <span class="summary">Details AI's learned biases centered around a gender and sexuality conversation with AI chatbot
+                            <span onclick="window.open('https://www.pandorabots.com/mitsuku/');">Mitsuku</span></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="window.open('../assets/pdfs/TheDangersOfDetectingSexualOrientationFromFaces.pdf')">
+                          <img class="image-content" src="https://d7umqicpi7263.cloudfront.net/img/product/7cd6eca5-64f8-4df1-b1e0-01d16922709c/d61503fe-2e87-4f3f-9468-9a697564528f.png" />
+                        </div>
+                        <div class="row">
+                          <span class="title">
+                            <a href="../assets/pdfs/TheDangersOfDetectingSexualOrientationFromFaces.pdf" target="_blank" style="color: black">The Dangers of Detecting Sexual Orientation From Faces</a>
+                          </span>
+                        </div>
+                        <div class="row">
+                          <span class="summary">A case study unpacking Wang and Kosinski's research on deep neural networks predicting sexual orientation from faces</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="window.open('../assets/pdfs/HairpinsInMusic.pdf')">
+                          <img class="image-content" src="https://www.shareicon.net/data/256x256/2016/09/21/830794_music_512x512.png" />
+                        </div>
+                        <div class="row">
+                          <span class="title">
+                            <a href="../assets/pdfs/HairpinsInMusic.pdf" target="_blank" style="color: black">Unraveling the Ambiguity of Hairpins in Music</a>
+                          </span>
+                        </div>
+                        <div class="row">
+                          <span class="summary">Sheds light on the subjectivity of Western Musical Notation and the different interpretations of hairpin dynamics</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="hidden-xs col-sm-1 col-md-2 col-lg-2"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="row">
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <span class="projects-subheader">&nbsp;Music&nbsp;<span>
+                    <i class="fa fa-plus" aria-hidden="true" style="cursor: pointer" onclick="toggleSection('music-container', event)"></i>
+              </div>
+              <div class="line"></div>
+              <div id="music-container" class="container collapsible" style="height:0;">
+                <div id="music-container-contents" class="row">
+                  <div class="hiddex-xs col-sm-1 col-md-2 col-lg-2"></div>
+                  <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="window.open('https://www.youtube.com/channel/UCgwPxIqu9Bxr2ORAMeO8AVQ')">
+                          <img class="image-content" src="https://yt3.ggpht.com/dlztO2jhoFUUvWuBsOMZ6Wdu9indfFkoOAY1AQNffMbA0sZ_uecvciFOkiGnM-4kpOzLIS3CAg=s176-c-k-c0x00ffffff-no-rj" />
+                        </div>
+                        <div class="row">
+                          <span class="title">
+                            <a href="https://www.youtube.com/channel/UCgwPxIqu9Bxr2ORAMeO8AVQ" target="_blank" style="color: black">Misc Videos</a>
+                          </span>
+                        </div>
+                        <div class="row">
+                          <span class="summary">An assortment of videos I've made centered around music history, performance, transcriptions, and more.</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="window.open('https://www.youtube.com/watch?v=EZscCQ51Ngw')">
+                          <img class="image-content" src="https://pm1.narvii.com/7554/22ee9ce04ad876d309be5dae480ef46f3011abbar1-350-548v2_128.jpg" />
+                        </div>
+                        <div class="row">
+                          <span class="title">
+                            <a href="https://www.youtube.com/watch?v=EZscCQ51Ngw" target="_blank" style="color: black">Grieg Concerto in A minor, I</a>
+                          </span>
+                        </div>
+                        <div class="row">
+                          <span class="summary">Grinnell College Concerto Competition Winner's Recital</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="window.open('https://www.youtube.com/watch?v=_wPaZVe_KRM')">
+                          <img class="image-content" src="https://i.pinimg.com/favicons/c10d7a7394a418b02929abda145eacff319c4d0ab446981dc72717d4.ico?cd1814284a05a56f15e8641723741464" />
+                        </div>
+                        <div class="row">
+                          <span class="title">
+                            <a href="https://www.youtube.com/watch?v=_wPaZVe_KRM" target="_blank" style="color: black">Terrace Hill Piano Competition</a>
+                          </span>
+                        </div>
+                        <div class="row">
+                          <span class="summary">2nd Prize performance at the Terrace Hill Piano Competition</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden-xs col-sm-1 col-md-2 col-lg-2"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="summary" style="padding-top:10px"></div>
+          <div class="gap"></div>
+          <div class="summary-strip">
+            <div class="container">
+              <div class="title text-center">
+                Summary
+              </div>
+            </div>
+          </div>
+          <div class="education-experience-skills">
+            <div class="container">
+              <div class="row is-flex">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                  <div class="box">
+                    <h4>
+                      <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Education
+                    </h4>
+                    <div class="line"></div>
+                    <strong><a href="https://www.grinnell.edu/" target="_blank" class="link">Grinnell College</a></strong>
+                    <br>
+                    B.A. Computer Science and Music
+                    <br>
+                    Aug. 2016 - May 2020
+                    <br>
+                    <br>
+                    <strong><a href="https://www.ait-budapest.com/" target="_blank" class="link">Aquincum Institute of Technology</a></strong>
+                    <br>
+                    Certificate Computer Science
+                    <br>
+                    Feb. 2019 - May 2019
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                  <div class="box">
+                    <h4>
+                      <i class="fa fa-list" aria-hidden="true"></i>&nbsp;Experience
+                    </h4>
+                    <div class="line"></div>
+                    <strong><a href="https://www.kumandgo.com/" target="_blank" class="link">Kum & Go</a></strong>
+                    <br>
+                    IT Solutions Developer
+                    <br>
+                    Aug 2020 - Present
+                    <br>
+                    <br>
+                    <strong><a href="https://principal.com/" target="_blank" class="link">Principal Financial Group</a></strong>
+                    <br>
+                    Software Engineering Intern
+                    <br>
+                    May 2020 - Aug. 2020
+                    <br>
+                    <br>
+                    <strong><a href="https://namiiowa.org/" target="_blank" class="link">National Alliance on Mental Illness</a></strong>
+                    <br>
+                    Front End Developer
+                    <br>
+                    Aug. 2019 - Dec. 2019
+                    <br>
+                    <br>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                  <div class="box">
+                    <h4>
+                      <i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;Skills
+                    </h4>
+                    <div class="line"></div>
+                    <h1>
+                      <div class="skill-icons">
+                        <i class="devicon-csharp-plain-wordmark"></i>
+                        <i class="devicon-javascript-plain"></i>
+                        <i class="devicon-kotlin-plain-wordmark"></i>
+                        <br>
+                        <i class="devicon-angularjs-plain-wordmark"></i>
+                        <i class="devicon-html5-plain-wordmark"></i>
+                        <i class="devicon-css3-plain-wordmark"></i>
+                        <br>
+                        <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
+                        <i class="devicon-dot-net-plain-wordmark"></i>
+                        <i class="devicon-azure-plain-wordmark"></i>
+
+                      </div>
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center flex-horizontal-center flex">
+                <strong>
+                  <a href="./assets/pdfs/resume.pdf" target="_blank" class="full-resume-button">Complete Resume
+                  </a>
+                </strong>
+              </div>
+
+            </div>
+          </div>
+
+          <div id="about-me" style="padding-top:10px"></div>
+          <div class="gap"></div>
+          <div class="about-me-strip">
+            <div class="container">
+              <div class="title text-center">
+                Bio
+              </div>
+            </div>
+          </div>
+          <div class="gap"></div>
+          <div class="about-me">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3"></div>
+                <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                  Software developer with ~3 years of experience building and deploying websites and mobile apps.
+                  I received my BA in 2020 from Grinnell College where I double majored in Computer Science and Music.
+                  Currently, I work at Kum & Go where I'm part of an internal-facing team building analytics tools and applications to aid in day-to-day store operation.
+                  <br />
+                  <br />
+                  While full stack web and mobile development has been my primary focus, I'm interested in expanding my knowledge in other facets of the computer science world, too.
+                  I've dabbled in cyber security CTFs, training machine learning models, and design prototyping to name a few.
+                  <br />
+                  <br />
+                  Outside of my life as a developer I spend my time playing piano, going to the gym, transcribing jazz, and binging Tiny Desk Concerts.
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bored-game" class="bored-game">
+          <div id="back-btn" class="back-btn" onclick="hideBoredGame()"><i class="fa fa-arrow-left"></i>&nbsp;Back</div>
+          <div id="landing-page-message" class="landing-page-message">
+            <span style="font-size: 42px; font-weight: bold">Bored?</span>
+            <br>
+            <span style="font-size:28px">Let's play a game</span>
+            <br>
+            <svg viewBox="0 0 68 33" class="chevron-down">
+              <path d="M.58 3.414l27.432 27.433c2.715 2.715 7.167 2.787 9.964.164L67.356 3.46 64.62.54 35.24 28.093c-1.222 1.146-3.212 1.114-4.4-.075L3.408.586.579 3.414z"></path>
+            </svg>
+            <br>
+            <div class="black-button" onclick="showQuestion(1, event)">START</div>
+          </div>
+          <div id="question-progress" class="question-progress">
+            <span id='question-progress-1'>1</span>
+            <span id='question-progress-2'>2</span>
+            <span id='question-progress-3'>3</span>
+          </div>
+          <div class="question-template question-1" id="question1">
+            <div class="question-text-header">Reaction Time</div>
+            <div class="question-text-subheader">Click anywhere on the screen as soon as the background color changes to green. <br> To advance, you're reaction time must be below 300ms.</div>
+            <div id="reaction-time" class="reaction-time"></div>
+            <div id="to-question-two-button" class="black-button" style="display: none" onclick="showQuestion(2, event)">Next Question</div>
+          </div>
+
+          <div class="question-template question-2" id="question2">
+            <div class="question-text-header">Steady Clicks</div>
+            <div class="question-text-subheader">Click anywhere on the screen at a rate of 60 clicks per minute (1 click per second) <br> To advance, you must maintain a CPM range of 59.50 - 60.50 for 10 clicks. <br> The timer will begin on your
+              first click.</div>
+            <div id="cpm" class="cpm">0 CPM</div>
+            <div id="to-question-three-button" class="black-button" style="display: none" onclick="showQuestion(3)">Next Question</div>
+            <div id="reset-click-listener-button" class="black-button" style="display: none" onclick="resetCPMClickListener()">Reset</div>
+          </div>
+          <div class="question-template question-3" id="question3">
+            <div class="question-text-header">RGB</div>
+            <div class="question-text-subheader">Guess the missing RGB value of the current background color within 10 units.</div>
+            <div id="rgb" class="rgb"></div>
+            <!-- <div id="to-question-four-button" class="black-button" style="display: none" onclick="showQuestion(4)">Next Question</div> -->
+            <div id="submit-rgb-button" class="black-button" onclick="submitRGB()">Submit</div>
+            <div id="reset-rgb-button" class="black-button" style="display: none" onclick="resetRGB()">Reset</div>
+            <div id="res-rgb-text" style='display: none; font-size: 24px;'></div>
+            <div id="fireworks" class="fireworks" style="display: none"></div>
+          </div>
+        </div>
+
+</body>
+
+</html>
+<script>
+  function showQuestion(questionNumber, event) {
+    document.getElementById('question' + questionNumber).style.display = 'block';
+    var blueBg = 'rgb(142, 208, 214)';
+    var greenBg = 'rgb(67, 175, 17)';
+
+    if (questionNumber == 1) {
+      // if (false) {
+      var earlyMessage = 'Too Early! Click to reset';
+      var startTime = 0;
+      var randomDelay = Math.random() * (10000 - 3000) + 3000; //(3 to 10 seconds)
+      var reactionTimeEl = document.getElementById('reaction-time');
+      document.getElementById('question-progress').style.display = 'block';
+      document.getElementById('landing-page-message').style.display = 'none';
+      var boredGameCanvas = document.getElementById('bored-game');
+      var reactionTimeout;
+
+      function changeBgColorGreen() {
+        startTime = Date.now(); //Start timer
+        boredGameCanvas.style.backgroundColor = greenBg; //change bg backgroundColor
+      }
+
+      function stopReactionTimeout() {
+        clearTimeout(reactionTimeout);
+      }
+
+      event.stopPropagation()
+      boredGameCanvas.addEventListener('click', function() {
+        if ((window.getComputedStyle(boredGameCanvas).getPropertyValue('background-color') == blueBg && reactionTimeEl.innerHTML == earlyMessage || (window.getComputedStyle(boredGameCanvas).getPropertyValue('background-color') == greenBg &&
+            parseInt(reactionTimeEl.innerHTML.replace(/\D/g, '')) >= 300))) {
+          //Try again use case
+          console.log("try again", parseInt(reactionTimeEl.innerHTML.replace(/\D/g, '')), reactionTimeEl.innerHTML.replace(/\D/g, ''));
+          boredGameCanvas.style.backgroundColor = blueBg;
+          reactionTimeEl.innerHTML = "";
+          randomDelay = Math.random() * (10000 - 3000) + 3000;
+          reactionTimeout = setTimeout(changeBgColorGreen, randomDelay);
+        } else if (window.getComputedStyle(boredGameCanvas).getPropertyValue('background-color') == blueBg) {
+          //Clicked before bg color change use case
+          reactionTimeEl.innerHTML = earlyMessage;
+          stopReactionTimeout();
+        } else if (window.getComputedStyle(boredGameCanvas).getPropertyValue('background-color') == greenBg && reactionTimeEl.innerHTML == "") {
+          //Clicked after bg color change use case
+          var endTime = Date.now();
+          var difference = endTime - startTime;
+          reactionTimeEl.innerHTML = difference + 'ms';
+          if (difference < 300) {
+            //Only show next button if reaction time < 200
+            reactionTimeEl.innerHTML;
+            document.getElementById('to-question-two-button').style.display = 'inline-block';
+          } else {
+            reactionTimeEl.innerHTML += '<br><span style="font-size:20px; font-weight: normal">Too slow! Click anywhere to retry.</span>';
+          }
+        }
+      });
+
+      reactionTimeout = setTimeout(changeBgColorGreen, randomDelay);
+    }
+
+    if (questionNumber == 2) {
+      // if (false) {
+      document.getElementById('question1').style.display = 'none';
+      setComplete(1);
+      var boredGameCanvas = document.getElementById('bored-game');
+      boredGameCanvas.style.backgroundColor = blueBg;
+
+      var clickTimes = []; //track the timeInMillis of when the clicks occurred
+      var diffBetweenClicks = []; //preprocess the difference between the clicks in clickTimes array
+      var numClicks = 0;
+      event.stopPropagation();
+      boredGameCanvas.addEventListener('click', function() {
+        numClicks++;
+        setupCPMClickListener(numClicks, clickTimes, diffBetweenClicks);
+      });
+    }
+
+    if (questionNumber == 3) {
+      // if (true) {
+      document.getElementById('question2').style.display = 'none';
+      setComplete(2);
+      resetRGB();
+    }
+  }
+
+  function resetCPMClickListener() {
+    var clickTimes = []; //track the timeInMillis of when the clicks occurred
+    var diffBetweenClicks = []; //preprocess the difference between the clicks in clickTimes array
+    var numClicks = 0;
+    event.stopPropagation();
+    document.getElementById('cpm').innerHTML = '0 CPM';
+    document.getElementById('reset-click-listener-button').style.display = 'none';
+    document.getElementById('bored-game').addEventListener('click', function() {
+      numClicks++;
+      setupCPMClickListener(numClicks, clickTimes, diffBetweenClicks);
+    });
+  }
+
+  function setupCPMClickListener(numClicks, clickTimes, diffBetweenClicks) {
+    var nextQuestionBtn = document.getElementById('to-question-three-button');
+    var cpmDisplay = document.getElementById('cpm');
+    var nextQuestionBtn = document.getElementById('to-question-three-button');
+    var resetListenerBtn = document.getElementById('reset-click-listener-button');
+    var boredGameCanvas = document.getElementById('bored-game');
+
+    console.log("click", numClicks, clickTimes, diffBetweenClicks);
+    if (numClicks == 1) { //Stores first click
+      clickTimes[0] = Date.now();
+    } else { //All other clicks
+      var currClickTime = Date.now();
+      var prevClickTime = clickTimes[numClicks - 2];
+      var difference = currClickTime - prevClickTime;
+      clickTimes[numClicks - 1] = currClickTime;
+      diffBetweenClicks[numClicks - 2] = difference;
+      var cpm = 60 / ((diffBetweenClicks.reduce((a, b) => a + b, 0) / diffBetweenClicks.length) / 1000);
+      cpmDisplay.innerHTML = cpm.toFixed(2) + ' CPM';
+      if (numClicks >= 10) { //Final click
+        var cpm = parseFloat(cpmDisplay.innerHTML.replace(' CPM', ''));
+        console.log("cpm", cpm);
+        if (cpm > 59.5 && cpm < 60.5) { //next question
+          nextQuestionBtn.style.display = 'inline-block';
+          boredGameCanvas.replaceWith(boredGameCanvas.cloneNode(true));
+        } else if (cpm <= 59.5) { //reset
+          cpmDisplay.innerHTML += '<br><span style="font-size:20px; font-weight: normal">Too slow!</span>';
+          resetListenerBtn.style.display = 'inline-block';
+          boredGameCanvas.replaceWith(boredGameCanvas.cloneNode(true));
+        } else if (cpm >= 60.5) {
+          cpmDisplay.innerHTML += '<br><span style="font-size:20px; font-weight: normal">Too fast!</span>';
+          resetListenerBtn.style.display = 'inline-block';
+          boredGameCanvas.replaceWith(boredGameCanvas.cloneNode(true));
+        }
+      }
+    }
+  };
+
+  function submitRGB() {
+    var input = document.getElementById('rgb-guess');
+    var resText = document.getElementById('res-rgb-text');
+    var submittedValue = input.value;
+    var actualRGB = input.style.backgroundColor;
+    var rgbArr = actualRGB.substring(4, actualRGB.length - 1)
+      .replace(/ /g, '')
+      .split(',');
+    var classList = input.classList;
+    var actualValue = 0;
+    if (classList.contains('red')) {
+      actualValue = parseInt(rgbArr[0]);
+    } else if (classList.contains('green')) {
+      actualValue = parseInt(rgbArr[1]);
+    } else {
+      actualValue = parseInt(rgbArr[2]);
+    }
+
+    if (Math.abs(actualValue - submittedValue) < 10) {
+      //WINNER
+      setComplete(3);
+      document.getElementById('fireworks').style.display = 'inline-block';
+      resText.style.display = 'block';
+      resText.innerHTML = 'You win!';
+
+      const celebration = document.querySelector('.fireworks');
+
+      const fireworks = new Fireworks(celebration, {
+        delay: {
+          min: 25,
+          max: 50
+        },
+        hue: {
+          min: 275,
+          max: 280
+        },
+        brightness: {
+          min: 50,
+          max: 80
+        },
+        trace: 1,
+        particles: 90,
+        friction: .95,
+        gravity: 1.5,
+        acceleration: 1,
+        explosion: 6,
+        opacity: 0.1,
+        rocketsPoint: 50,
+      })
+
+      fireworks.start();
+    } else {
+      resText.style.display = 'block';
+      resText.innerHTML = 'Incorrect. The actual value is ' + actualValue;
+      document.getElementById('reset-rgb-button').style.display = 'inline-block';
+      document.getElementById('submit-rgb-button').style.display = 'none';
+    }
+  }
+
+  function resetRGB() {
+    var boredGameCanvas = document.getElementById('bored-game');
+    var resText = document.getElementById('res-rgb-text');
+    var questionProgressEl = document.getElementById('question-progress');
+    var rgbEl = document.getElementById('rgb');
+    var randomR = Math.floor(Math.random() * (255 - 0 + 1) + 0);
+    var randomG = Math.floor(Math.random() * (255 - 0 + 1) + 0);
+    var randomB = Math.floor(Math.random() * (255 - 0 + 1) + 0);
+    var randomColor = 'rgb(' + randomR + ', ' + randomG + ', ' + randomB + ')';
+    var randomMissingRGB = Math.floor(Math.random() * (3 - 1 + 1) + 1);
+    document.getElementById('reset-rgb-button').style.display = 'none';
+    document.getElementById('submit-rgb-button').style.display = 'inline-block';
+    boredGameCanvas.style.backgroundColor = randomColor;
+    resText.style.display = 'none';
+
+    console.log("CHEATER", randomColor);
+    if (randomMissingRGB == 1) {
+      var typingEl = '<input id="rgb-guess" class="red" type="number" style="border: 0; width: 75px; background-color: ' + randomColor + '"></input>';
+      rgbEl.innerHTML = 'rgb(' + typingEl + ', ' + randomG + ', ' + randomB + ')';
+    } else if (randomMissingRGB == 2) {
+      var typingEl = '<input id="rgb-guess" class="green" type="number" style="border: 0; width: 75px; background-color: ' + randomColor + '"></input>';
+      rgbEl.innerHTML = 'rgb(' + randomR + ', ' + typingEl + ', ' + randomB + ')';
+    } else {
+      var typingEl = '<input id="rgb-guess" class="blue" type="number" style="border: 0; width: 75px; background-color: ' + randomColor + '"></input>';
+      rgbEl.innerHTML = 'rgb(' + randomR + ', ' + randomG + ', ' + typingEl + ')';
+    }
+
+    const brightness = Math.round(((parseInt(randomR) * 299) +
+      (parseInt(randomG) * 587) +
+      (parseInt(randomB) * 114)) / 1000);
+    const textColour = (brightness > 125) ? 'black' : 'white';
+    //Set text color based on background color
+    setColor(textColour);
+
+    document.getElementById("rgb-guess").focus();
+    rgbEl.style.display = 'block';
+  }
+
+  function setColor(color) {
+    var boredGameCanvas = document.getElementById('bored-game');
+    var allEls = boredGameCanvas.getElementsByTagName("*");
+    var inputEl = document.getElementById('rgb-guess');
+    inputEl.style.color = color;
+    for (var i = 0; i < allEls.length; i++) {
+      allEls[i].style.color = color;
+      allEls[i].style.borderColor = color;
+    }
+  }
+
+  function setComplete(questionNumber) {
+    var questionProgressEl = document.getElementById('question-progress-' + questionNumber);
+    questionProgressEl.innerHTML = '&#10003;';
+    questionProgressEl.backgroundColor = 'rgb(67, 175, 17) !important';
+  }
+</script>
+
+
+<!-- <script type="text/javascript"> (function() { var quotes = $(".quotes"); var quoteIndex = -1; function showNextQuote() {++quoteIndex; quotes.eq(quoteIndex % quotes.length).fadeIn(1500).delay(1500).fadeOut(1500, showNextQuote); } showNextQuote();
+						})(); </script> <script type="text/javascript"> var frontPage = { duration : 1 } var frontPageContent1 = { duration : 1, delay : 0, } var im = { duration : 1, delay : 0, } var frontPageContent2 = { duration : 1, delay : 0, } var frontPageContent3 = {
+						scale : 0, duration : 1, delay : 0, } var reveal = { duration : 1, reset : false, } var box = { duration : 1, reset : false, } var grid = { duration : 1, reset : false, } sr.reveal('.front-page', frontPage); sr.reveal('.front-page-content1',
+						frontPageContent1); sr.reveal('.im', im); sr.reveal('.underline', underline); sr.reveal('.front-page-content2', frontPageContent2); sr.reveal('.front-page-content3', frontPageContent3); sr.reveal('.reveal', reveal); sr.reveal('.box', box, 150);
+						sr.reveal('.grid', grid, 150); </script> -->
+<!-- Page preloader -->
+<script type="text/javascript">
+  function onReady(callback) {
+    var intervalId = window.setInterval(function() {
+      if (document.getElementsByTagName('body')[0] !== undefined) {
+        window.clearInterval(intervalId);
+        callback.call(this);
+      }
+    }, 1000);
+  }
+
+  onReady(function() {
+    document.getElementById('loading').classList.add('hidden');
+    document.getElementById('hidden').classList.remove('hidden');
+  });
+
+  // $(window).load(function() { 	$("#loading").addClass("hidden"); 	$("#hidden").removeClass("hidden"); 	window.scrollBy(0, 1); })
+</script>
+<!-- Navbar active class changing -->
+<script>
+  function navitemClicked(e) {
+    console.log("event", document.querySelector('.nav.navbar-nav li.selected'));
+    document.querySelector('.nav.navbar-nav li.selected').classList.remove('selected');
+    e.target.parentNode.classList.add('selected');
+    console.log("test", e.target);
+  }
+</script>
+<!--Hide navbar on click away -->
+<script>
+  $(document).click(function(event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+      $navbar.collapse('hide');
+    }
+  });
+</script>
+
+<script>
+  function toggleNonTechProjects() {
+    var nonTechProjects = document.getElementById("non-tech-projects");
+    if (nonTechProjects.style.display === "block") {
+      document.getElementById("non-tech-projects").style.display = "none";
+      document.getElementById("btn-non-tech").innerHTML = "Show Non-Tech Projects";
+    } else {
+      document.getElementById("non-tech-projects").style.display = "block";
+      document.getElementById("btn-non-tech").innerHTML = "Hide Non-Tech Projects";
+    }
+  }
+</script>
+
+<!-- Javascript to add class on scroll for navbar -->
+<script type="text/javascript">
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    //>=, not <=
+    if (scroll >= 100) {
+      //clearHeader, not clearheader - caps H
+      $(".navbar").addClass("nav-bg");
+    }
+  });
+  //missing );
+</script>
+
+<!-- Collapsible Section -->
+<script>
+  // var defaultOpenSectionId = 'software-development-container'
+  // var defaultSection = document.getElementById(defaultOpenSectionId);
+  // var defaultSectionContents = document.getElementById(defaultOpenSectionId + '-contents');
+  // defaultSection.style.height = defaultSectionContents.offsetHeight + 'px';
+
+  function toggleSection(sectionId, e) {
+    var section = document.getElementById(sectionId);
+    var sectionContents = document.getElementById(sectionId + '-contents');
+    if (section.classList.contains('open')) {
+      section.classList.remove('open');
+      section.style.height = '0';
+      e.target.classList.remove('fa-minus');
+      e.target.classList.add('fa-plus');
+      section.style.marginBottom = '0';
+    } else {
+      section.classList.add('open');
+      section.style.height = sectionContents.offsetHeight + 'px';
+      e.target.classList.add('fa-minus');
+      e.target.classList.remove('fa-plus');
+      section.style.marginBottom = '45px';
+    }
+  }
+</script>
+
+<!-- Other things hover -->
+<script>
+  var otherThingsEl = document.getElementById('other-things');
+  otherThingsEl.addEventListener("mouseover", function() {
+    var headshotCard = document.getElementById('headshot-card');
+    headshotCard.style.transform = 'rotateY(180deg)';
+  });
+  otherThingsEl.addEventListener("mouseout", function() {
+    var headshotCard = document.getElementById('headshot-card');
+    headshotCard.style.transform = 'rotateY(360deg)';
+  });
+</script>
+<!-- BORED GAME -->
+<script>
+  function showBoredGame() {
+    document.getElementById('bored-game').style.display = 'block';
+    document.getElementById('default-site').style.display = 'none';
+  }
+
+  function hideBoredGame() {
+    document.getElementById('bored-game').style.display = 'none';
+    document.getElementById('default-site').style.display = 'block';
+  }
+</script>
