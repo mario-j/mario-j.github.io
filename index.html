@@ -18,7 +18,7 @@
 
 
     <!-- custom css -->
-  <link rel="stylesheet" type="text/css"  href="../css/index.css">
+  <link rel="stylesheet" type="text/css"  href="./css/index.css">
 
     <!-- bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -65,7 +65,7 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button type="button" class="navbar-toggle navbar-light" data-toggle="collapse" data-target="#navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -74,7 +74,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav bg-dark" onclick="navitemClicked(event)">
             <li class="selected">
               <a class="nav-item" href="#home">Home</a>
@@ -119,7 +119,7 @@
               </div>
             </a>
             <a style="text-decoration: none">
-              <a href="../assets/pdfs/resume.pdf" target="_blank" class="black-button">RESUME</a>
+              <a href="./assets/pdfs/resume.pdf" target="_blank" class="black-button">RESUME</a>
             </a>
             <a href="#about-me" style="text-decoration: none">
               <div class="black-button">
@@ -132,9 +132,9 @@
 
           <div class="card-container">
             <div id="headshot-card" class="card">
-              <div class="side"><img class="headshot img-fluid" src="../assets/images/MarioJordan.jpg" alt="Mario Headshot"></div>
+              <div class="side"><img class="headshot img-fluid" src="./assets/images/MarioJordan.jpg" alt="Mario Headshot"></div>
               <div class="side back">
-                <ul style="margin-top: 60px;margin-left: 30px;"">
+                <ul style="margin-top: 60px;margin-left: 30px;">
 							<li>Pianist</li>
 							<li>Exerciser</li>
 							<li>Crossword enthusiast</li>
@@ -277,6 +277,27 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
+                        <div class="row portfolio-image" onclick="window.open('https://github.com/mario-j/music-guessing-game')">
+                          <img class="image-content" src="https://static.vecteezy.com/system/resources/thumbnails/007/634/539/small_2x/sound-wave-logo-icon-design-template-free-vector.jpg" />
+                        </div>
+                        <div class="row">
+                          <span class="title">
+                            <a onclick="window.open('https://github.com/mario-j/music-guessing-game')" style="color: black; line-height:36px;">Guess The Song</a>
+                          </span>
+                          <a href="https://github.com/mario-j/music-guessing-game" target="_blank">
+                            <div class="portfolio-icon">
+                              <i class="fa fa-github " aria-hidden="true"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="row">
+                          <span class="summary">An Angular/Node.js site integrated with Spotify's web API. Intended to test your song recognition ability.</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="hidden-xs col-sm-1 col-md-2 col-lg-2"></div>
                 </div>
@@ -299,12 +320,12 @@
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
-                        <div class="row portfolio-image" onclick="window.open('../assets/pdfs/AIsLearnedBiases.pdf')">
+                        <div class="row portfolio-image" onclick="window.open('./assets/pdfs/AIsLearnedBiases.pdf')">
                           <img class="image-content" src="https://suplari.com/wp-content/uploads/2018/08/artificial-intelligence.png" />
                         </div>
                         <div class="row">
                           <span class="title">
-                            <a href="../assets/pdfs/AIsLearnedBiases.pdf" target="_blank" style="color: black;">Gender Bias and Heternormativity in AI</a>
+                            <a href="./assets/pdfs/AIsLearnedBiases.pdf" target="_blank" style="color: black;">Gender Bias and Heternormativity in AI</a>
                           </span>
                         </div>
                         <div class="row">
@@ -316,12 +337,12 @@
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
-                        <div class="row portfolio-image" onclick="window.open('../assets/pdfs/TheDangersOfDetectingSexualOrientationFromFaces.pdf')">
+                        <div class="row portfolio-image" onclick="window.open('./assets/pdfs/TheDangersOfDetectingSexualOrientationFromFaces.pdf')">
                           <img class="image-content" src="https://d7umqicpi7263.cloudfront.net/img/product/7cd6eca5-64f8-4df1-b1e0-01d16922709c/d61503fe-2e87-4f3f-9468-9a697564528f.png" />
                         </div>
                         <div class="row">
                           <span class="title">
-                            <a href="../assets/pdfs/TheDangersOfDetectingSexualOrientationFromFaces.pdf" target="_blank" style="color: black">The Dangers of Detecting Sexual Orientation From Faces</a>
+                            <a href="./assets/pdfs/TheDangersOfDetectingSexualOrientationFromFaces.pdf" target="_blank" style="color: black">The Dangers of Detecting Sexual Orientation From Faces</a>
                           </span>
                         </div>
                         <div class="row">
@@ -332,12 +353,12 @@
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
-                        <div class="row portfolio-image" onclick="window.open('../assets/pdfs/HairpinsInMusic.pdf')">
+                        <div class="row portfolio-image" onclick="window.open('./assets/pdfs/HairpinsInMusic.pdf')">
                           <img class="image-content" src="https://www.shareicon.net/data/256x256/2016/09/21/830794_music_512x512.png" />
                         </div>
                         <div class="row">
                           <span class="title">
-                            <a href="../assets/pdfs/HairpinsInMusic.pdf" target="_blank" style="color: black">Unraveling the Ambiguity of Hairpins in Music</a>
+                            <a href="./assets/pdfs/HairpinsInMusic.pdf" target="_blank" style="color: black">Unraveling the Ambiguity of Hairpins in Music</a>
                           </span>
                         </div>
                         <div class="row">
@@ -398,7 +419,7 @@
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio-contents">
                         <div class="row portfolio-image" onclick="window.open('https://www.youtube.com/watch?v=_wPaZVe_KRM')">
-                          <img class="image-content" src="https://i.pinimg.com/favicons/c10d7a7394a418b02929abda145eacff319c4d0ab446981dc72717d4.ico?cd1814284a05a56f15e8641723741464" />
+                          <img class="image-content" style="aspect-ratio: 1 / 1" src="https://i.ytimg.com/vi/_wPaZVe_KRM/maxresdefault.jpg" />
                         </div>
                         <div class="row">
                           <span class="title">
